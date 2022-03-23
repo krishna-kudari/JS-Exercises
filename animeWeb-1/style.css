@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ff00af , #6d19db);
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    color: #fff;
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
+nav .logo{
+    width: 150px;
+}
+
+nav ul {
+    flex:1;
+    text-align: right;
+    list-style: none;
+}
+nav ul li {
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+}
+
+
+[title="button"]{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    margin-left: 30px;
+    padding: 6px 25px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+}
+
+.col-1{
+    flex-basis: 40%;
+    min-width: 300px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.col-2{
+    flex-basis: 55%;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+
+.col-1 img{
+    width: 100%;
+}
+.col-2 h2{
+    font-size: 60px;
+    font-weight: 600;
+}
+.col-2 h2 span{
+    color: rgb(250, 160, 35);
+}
+
+.col-2 p{
+    margin: 10px 0 5px;
+    max-width: 570px;
+    margin-bottom: 30px;
+}
+.col-2 .learn-more{
+    text-decoration: none;
+    margin-right: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 5px 15px;
+    color: #4d19db;
+}
+.col-2 a{
+    text-decoration: none;
+    color: rgb(250, 160, 35);
+}
+.elements{
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: move 2.5s linear infinite;
+}
+
+@keyframes move {
+    0%{
+        transform: translate(-15px , 0px);
+    }
+    50%{
+        transform: translate(0px , -15px);
+    }
+    100%{
+        transform: translate(-15px , 0px);
+    }
+}
+
+.top-tri{
+    position: absolute;
+    top:30%;
+    left: -180px;
+    opacity: 0.7;
+    z-index: -1;
+}
+.left-tri{
+    position: absolute;
+    top:380px;
+    left: 50%;
+    opacity: 0.7;
+    z-index: -1;
+}
+.circle{
+    position: absolute;
+    top:-400px;
+    right: -180px;
+    opacity: 0.7;
+    z-index: -1;
+}
